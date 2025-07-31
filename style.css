@@ -1,0 +1,119 @@
+*{
+    padding:0;
+    margin:0;
+}
+:root{
+  --bg: #121826;
+  --card: #2c2550;
+  --darkcard: #1E1B2E;
+  --primary: #7F5AF0;
+  --accent: #2CB67D;
+  --text: #E5E5E5;
+  --text-muted: #A1A1AA;
+  --block: #17141b;
+  --hr: #927ea5;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--bg);
+    color: var(--text);
+}
+header{
+    
+    display: flex;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1;
+    min-width: 100%;
+    justify-content: center;
+    background-color: var(--card);
+    margin: 0 0 40px 0;
+}
+main{
+    display: flex;
+    position:relative;
+    top:130px;
+    z-index: 0;
+    flex-direction: column;
+    align-items: center;
+    flex:1;
+    gap:30px;
+    margin: 0 0 30px 0;
+}
+section{
+    display: flex;
+    font-size: 1.2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    max-width: 600px;
+    flex-wrap: wrap;
+    background-color:  var(--darkcard);
+    border-radius: 20px;
+    padding: 40px;
+}
+ #hacks,#conversaHack{
+    display:flex;
+    gap:20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+
+section h1{
+    user-select: none;
+    color:var(--text-muted);
+    font-size: 3rem;
+    transition: transform 0.3s ease;
+}
+section h1:hover{
+    color:var(--text);
+    transform: scale(1.05);
+}
+hr{
+    border: none;
+    height: 2px;
+    width: 600px;
+    background-color: var(--hr);
+}
+span{
+    color:var(--accent);
+}
+.block{
+    background-color: var(--block);
+}
+#obterResposta{
+    color:var(--text);
+    background-color: var(--block);
+    border: none;
+    border: solid 3px var(--accent);
+    padding: 4px;
+    outline: none;
+
+}
+.ilustracao{
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+.logo{
+    height: 90px;
+    border-radius: 100px;
+}
+
+footer {
+   display: flex;
+    position:relative;
+    top:130px;
+    z-index: 2;
+    height: 50px;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--block);
+}
