@@ -95,6 +95,23 @@ span{
     outline: none;
 
 }
+#btao{
+    cursor: pointer;
+    background-color: var(--accent);
+    color:var(--block);
+    transition: transform 0.3s ease;
+    border: none;
+    height: 40px;
+    width: auto;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+}
+#btao:hover{
+    transform:scale(1.15);
+    color: #7F5AF0;
+}
+
 .ilustracao{
     width: 100%;
     max-width: 500px;
